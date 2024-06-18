@@ -1,0 +1,20 @@
+.home-page-container {
+    max-width: 800px;
+    width: 100%;
+    justify-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    padding-top: 100px;
+    align-items: center
+}
+.cari-button-style {
+    margin-left: 12px;
+    align-items: center
+}
+.head-container {
+    display: flex;
+    justify-items: space-between;
+}
+.subhead-container {
+    width: 100%
+}

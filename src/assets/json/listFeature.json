@@ -1,0 +1,14 @@
+{   "status": 200,
+    "message": "Success",
+    "data": [
+        {  
+            "id": "X",
+            "featureCd": "XX",
+            "featureDesc": "XXX",
+            "featureNm": "features",
+            "isActive": "1",
+            "createdAt": "2023-10-19T02:33:28.000+00:00",
+            "updatedAt": "2023-11-23T05:08:04.000+00:00"
+        }
+    ]
+}

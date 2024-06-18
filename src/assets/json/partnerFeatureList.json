@@ -1,0 +1,14 @@
+{   "status": "Success",
+    "message": "",
+    "data": [
+        {   
+            "isCustomNotifFile": 0,
+            "isWF": 1,
+            "isCustom": 1,
+            "featureName": "x",
+            "featureCode": "x",
+            "corpName": "X",
+            "isEncrypt": 0
+        } 
+    ]
+}

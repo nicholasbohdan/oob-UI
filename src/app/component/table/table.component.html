@@ -1,0 +1,51 @@
+<table mat-table [dataSource]="dataSourceList">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="fitur">
+      <th mat-header-cell *matHeaderCellDef> Fitur </th>
+      <td mat-cell *matCellDef="let element"> {{element.featureName}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="isWF">
+      <th mat-header-cell *matHeaderCellDef> Is WF </th>
+      <td mat-cell *matCellDef="let element">
+          {{element.isWF}}
+         <button *ngIf="element.isWF === 0">ON</button>
+         <button *ngIf="element.isWF === 1">OFF</button>
+      </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="isKBBIS">
+      <th mat-header-cell *matHeaderCellDef> Is KBBIS </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.isCustom}}
+        <button *ngIf="element.isCustom === 0">ON</button>
+        <button *ngIf="element.isCustom === 1">OFF</button>
+      </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="isCustomNotifFile">
+      <th mat-header-cell *matHeaderCellDef> Is Custom Notif File </th>
+      <td mat-cell *matCellDef="let element"> {{element.isCustomNotifFile}}
+        <button *ngIf="element.isCustomNotifFile === 0">ON</button>
+        <button *ngIf="element.isCustomNotifFile === 1">OFF</button>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="isEncrypt">
+      <th mat-header-cell *matHeaderCellDef> Is Encrypt </th>
+      <td mat-cell *matCellDef="let element"> {{element.isEncrypt}}
+        <button *ngIf="element.isEncrypt === 0">ON</button>
+        <button *ngIf="element.isEncrypt === 1">OFF</button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

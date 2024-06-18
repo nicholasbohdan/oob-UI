@@ -1,0 +1,14 @@
+{   "status": "Success",
+    "message": "",    
+    "data": [
+        {            
+            "id": "x",
+            "corpCd": "xxx",
+            "corpNm": "partner",
+            "isThirdParty": 0,
+            "source": "XXXX",
+            "insertDt": "2023-05-26T10:05:17.000+00:00",
+            "isActive": "1"
+        }
+    ]
+} 

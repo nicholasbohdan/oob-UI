@@ -1,0 +1,40 @@
+<div class="home-page-container">
+  <div class="head-container">
+    <div class="subhead-container">
+      <mat-form-field>
+        <mat-label>Partner List</mat-label>
+        <mat-select [(ngModel)]="selectedPartner">
+          <div *ngIf="partnerList.length !== 0">
+            <mat-option
+              *ngFor="let item of partnerList"
+              [value]="item.id"
+            >
+              {{item.corpNm}}
+            </mat-option>
+          </div>
+        </mat-select>
+      </mat-form-field>
+      <button mat-stroked-button class="cari-button-style" (click)="handleCari()">Cari</button>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Feature List</mat-label>
+        <mat-select [(ngModel)]="selectedFeature">
+          <div *ngIf="featureList.length !== 0">
+            <mat-option
+              *ngFor="let item of featureList"
+              [value]="item.id"
+            >
+              {{item.featureNm}}
+            </mat-option>
+          </div>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <app-table
+    [dataSourceList]="dataSourceList"
+    [displayedColumns]="displayedColumns"
+    >
+  </app-table>
+</div>
